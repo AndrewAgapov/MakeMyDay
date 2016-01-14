@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1zL-kA-hXZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="r07-zP-bup">
+            <objects>
+                <navigationController id="1zL-kA-hXZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wJ3-x4-QvC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UAx-G6-EV9" kind="relationship" relationship="rootViewController" id="Tuz-Ab-age"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qgb-ke-i3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1039" y="384"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Sq6-ei-CQS">
+            <objects>
+                <viewController id="UAx-G6-EV9" customClass="HomeViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZgV-4M-9Ux"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGj-Ev-h9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NxR-7i-2ux">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jPw-8D-fYk">
+                                <rect key="frame" x="46" y="215" width="229" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npt-X3-bKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="229" height="50"/>
+                                        <animations/>
+                                        <state key="normal" title="Start to Make My Day"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="HSa-nm-RPz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.78039215689999997" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QX-nN-Qyg">
+                                <rect key="frame" x="45" y="300" width="230" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-Iu-hVV">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                                        <animations/>
+                                        <state key="normal" title="Calendar"/>
+                                        <connections>
+                                            <segue destination="ceH-el-3Lh" kind="show" id="U8X-E0-Efi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.78039215689999997" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MMD" translatesAutoresizingMaskIntoConstraints="NO" id="GN6-em-KTE">
+                                <rect key="frame" x="40" y="92" width="240" height="88"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hD8-3p-3bX"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jV-Zm-yI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="384"/>
+        </scene>
+        <!--Callendar View Controller-->
+        <scene sceneID="FPc-NK-czR">
+            <objects>
+                <viewController id="ceH-el-3Lh" customClass="CallendarViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XvW-BW-fl8"/>
+                        <viewControllerLayoutGuide type="bottom" id="iuo-Ej-5YG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uZf-f6-fv8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BSE-dS-N8k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DSS-3a-Ywa">
+                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Celll" id="9S1-yd-Z9j" customClass="CallendarCollectionViewCell" customModule="MakeMyDay" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBC-gL-tIa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.78039215689999997" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="lable" destination="VBC-gL-tIa" id="QiT-s6-7Nu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ceH-el-3Lh" id="mKQ-eV-QWI"/>
+                                    <outlet property="delegate" destination="ceH-el-3Lh" id="cmU-hy-4ku"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="BSE-dS-N8k" id="ob0-bB-sAI"/>
+                        <segue destination="pR5-eu-JmC" kind="popoverPresentation" identifier="showView" popoverAnchorView="uZf-f6-fv8" id="tWw-YD-zPo">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vlp-DI-GZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="1010"/>
+        </scene>
+        <!--Pop Over Table View Controller-->
+        <scene sceneID="Rgk-mC-lDG">
+            <objects>
+                <tableViewController id="pR5-eu-JmC" customClass="PopOverTableViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="bic-Ib-Ke5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Epr-hu-a5a">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <items>
+                                <navigationItem title="Title" id="7Bf-9s-fth">
+                                    <barButtonItem key="rightBarButtonItem" title="Done" id="ieG-ft-dXU"/>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="AsX-Zj-X1l">
+                                <rect key="frame" x="0.0" y="72" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" tableViewCell="AsX-Zj-X1l" id="b5A-ex-Y2N">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pR5-eu-JmC" id="NhV-Zd-5ZM"/>
+                            <outlet property="delegate" destination="pR5-eu-JmC" id="LtA-iF-cST"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Jh-OPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="1633"/>
+        </scene>
+        <!--Choose Your Cases-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UWj-fi-Zh8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="0.0" maxY="10"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9fF-5k-iYe">
+                                    <size key="itemSize" width="85" height="107"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="center" reuseIdentifier="cell" id="dBC-5g-Y8K" customClass="MyCollectionViewCell" customModule="MakeMyDay" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="85" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="85" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ed-gS-dcq">
+                                                    <rect key="frame" x="8" y="0.0" width="69" height="65"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DU-vU-sVM">
+                                                    <rect key="frame" x="0.0" y="66" width="85" height="41"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="image" destination="2Ed-gS-dcq" id="TUp-TO-M1w"/>
+                                            <outlet property="myLabel" destination="6DU-vU-sVM" id="lw3-Zt-mhR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jcD-Yv-mip"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="H0v-IT-Gm6"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UWj-fi-Zh8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B0g-Kx-D0c"/>
+                            <constraint firstItem="UWj-fi-Zh8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="JwI-1g-j8X"/>
+                            <constraint firstAttribute="trailing" secondItem="UWj-fi-Zh8" secondAttribute="trailing" id="v4a-oG-3P6"/>
+                            <constraint firstItem="UWj-fi-Zh8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="x0O-hh-u6D"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem id="Lrc-hA-22o"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Choose Your Cases" id="afh-3y-9xa">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="5Ut-uo-Gww">
+                            <connections>
+                                <segue destination="BL3-gk-Z9z" kind="show" id="53z-aL-AOW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="384"/>
+        </scene>
+        <!--Timing-->
+        <scene sceneID="H9G-wO-siG">
+            <objects>
+                <tableViewController id="BL3-gk-Z9z" customClass="TimingTableViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="g0P-DM-kwc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="88" id="Qqv-pD-faS" customClass="TableViewCell" customModule="MakeMyDay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qqv-pD-faS" id="Orv-It-7C9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGj-Cl-ZIe">
+                                            <rect key="frame" x="0.0" y="16" width="117" height="71"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB0-ZJ-KNn">
+                                            <rect key="frame" x="183" y="40" width="67" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSx-Co-itS">
+                                            <rect key="frame" x="253" y="41" width="67" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="au8-Go-fP4">
+                                            <rect key="frame" x="125" y="26" width="50" height="50"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="lableFrom" destination="PB0-ZJ-KNn" id="XhC-68-4PP"/>
+                                    <outlet property="lableOfCell" destination="JGj-Cl-ZIe" id="2FM-5X-OZk"/>
+                                    <outlet property="lableTill" destination="OSx-Co-itS" id="gFk-C6-6qN"/>
+                                    <outlet property="myImage" destination="au8-Go-fP4" id="nMH-zg-SLR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BL3-gk-Z9z" id="4TQ-S2-z9D"/>
+                            <outlet property="delegate" destination="BL3-gk-Z9z" id="XlQ-UH-g0x"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Timing" id="l8a-pI-uc5">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="mjS-uV-nwf">
+                            <connections>
+                                <segue destination="icj-of-C7J" kind="show" id="oPH-WV-Xfs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="Plv-5o-7W2" kind="show" identifier="DatePikersViewController" id="xYb-WN-Adw"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ev1-yx-0Pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="384"/>
+        </scene>
+        <!--Date Pikers View Controller-->
+        <scene sceneID="Rvc-QE-6P6">
+            <objects>
+                <viewController storyboardIdentifier="DatePikersViewController" id="Plv-5o-7W2" customClass="DatePikersViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u7F-Dx-puc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mxd-iN-0hh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cm0-JF-jrF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-K4-5cw">
+                                <rect key="frame" x="0.0" y="234" width="320" height="120"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="469280823.74604499">
+                                    <!--2015-11-15 11:47:03 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="uk_UA"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-T3-cWc">
+                                <rect key="frame" x="0.0" y="90" width="320" height="120"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="469284249.62577599">
+                                    <!--2015-11-15 12:44:09 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-949410000">
+                                    <!--1970-12-01 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="uk_UA"/>
+                            </datePicker>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-Pg-f5g">
+                                <rect key="frame" x="0.0" y="64" width="320" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-r7-Jag">
+                                        <rect key="frame" x="140" y="3" width="40" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.78039215689999997" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="daU-Cj-nhh">
+                                <rect key="frame" x="0.0" y="210" width="320" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Till" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoc-4w-dom">
+                                        <rect key="frame" x="149" y="3" width="22" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.78039215689999997" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-M2-Hb3">
+                                <rect key="frame" x="110" y="371" width="101" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="didPressDone" destination="Plv-5o-7W2" eventType="touchUpInside" id="p3O-qE-VYc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="FirstDataPickerOutlet" destination="7Kc-T3-cWc" id="UE3-vY-Adf"/>
+                        <outlet property="SecondDataPickerOutlet" destination="6iB-K4-5cw" id="XKe-q9-M7B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UO6-Pm-i7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="1038"/>
+        </scene>
+        <!--Set The Day-->
+        <scene sceneID="Tqs-Ub-EdO">
+            <objects>
+                <viewController id="icj-of-C7J" customClass="SetTheDayViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EqO-lo-rXY"/>
+                        <viewControllerLayoutGuide type="bottom" id="KUU-hB-Wnz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jh0-Aa-bkW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jXw-bx-kwB">
+                                <rect key="frame" x="0.0" y="121" width="320" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="469307301.495857">
+                                    <!--2015-11-15 19:08:21 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="uk_UA"/>
+                                <connections>
+                                    <action selector="choosingDate:" destination="icj-of-C7J" eventType="valueChanged" id="yH0-xJ-CcZ"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-oc-QUy">
+                                <rect key="frame" x="0.0" y="380" width="320" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Set The Day" id="IJy-4F-uHN">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="FAv-vw-eML">
+                            <connections>
+                                <segue destination="CmV-ar-Sfd" kind="show" id="AfP-Rx-8z4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dataPicker" destination="jXw-bx-kwB" id="nDN-yx-geb"/>
+                        <outlet property="dateLable" destination="WJq-oc-QUy" id="N8X-iz-qta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYg-C1-Jue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="384"/>
+        </scene>
+        <!--My Day View Controller-->
+        <scene sceneID="Lv8-An-6e0">
+            <objects>
+                <viewController id="CmV-ar-Sfd" customClass="MyDayViewController" customModule="MakeMyDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LuT-3a-q2i"/>
+                        <viewControllerLayoutGuide type="bottom" id="c5j-Op-5WV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S6Y-23-l60">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3P-ka-Ekx">
+                                <rect key="frame" x="0.0" y="72" width="320" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-QQ-QkO">
+                                <rect key="frame" x="10" y="118" width="3" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24               hours" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lK-3a-hU0">
+                                <rect key="frame" x="0.0" y="166" width="8" height="203"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b41-Ib-WOc">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="OMt-cd-W3J">
+                            <connections>
+                                <action selector="saveTheData:" destination="CmV-ar-Sfd" id="zu0-3Q-SYj"/>
+                                <segue destination="UAx-G6-EV9" kind="show" id="tfj-du-U3S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lableOfMyDay" destination="r3P-ka-Ekx" id="L0B-rG-w75"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6SV-An-g6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MMD" width="1080" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tfj-du-U3S"/>
+    </inferredMetricsTieBreakers>
+</document>
