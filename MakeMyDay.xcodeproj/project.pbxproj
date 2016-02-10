@@ -21,7 +21,6 @@
 		49708C951BEE7D050046DF38 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49708C941BEE7D050046DF38 /* MyCollectionViewCell.swift */; };
 		49708C971BEE81D90046DF38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49708C961BEE81D90046DF38 /* HomeViewController.swift */; };
 		49708C9B1BF229020046DF38 /* TimingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49708C9A1BF229020046DF38 /* TimingTableViewController.swift */; };
-		497B055F1C0E11E5009BEE8C /* PopOverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B055E1C0E11E5009BEE8C /* PopOverTableViewController.swift */; };
 		497F0A5D1C0CAA8B00A477B2 /* CallendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F0A5C1C0CAA8B00A477B2 /* CallendarCollectionViewCell.swift */; };
 		497F0A5F1C0CAABC00A477B2 /* CallendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F0A5E1C0CAABC00A477B2 /* CallendarViewController.swift */; };
 		49BF50201C05FE0300190C80 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF501F1C05FE0200190C80 /* AudioToolbox.framework */; };
@@ -58,7 +57,6 @@
 		49708C941BEE7D050046DF38 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		49708C961BEE81D90046DF38 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		49708C9A1BF229020046DF38 /* TimingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingTableViewController.swift; sourceTree = "<group>"; };
-		497B055E1C0E11E5009BEE8C /* PopOverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverTableViewController.swift; sourceTree = "<group>"; };
 		497F0A5C1C0CAA8B00A477B2 /* CallendarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallendarCollectionViewCell.swift; path = ../CallendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		497F0A5E1C0CAABC00A477B2 /* CallendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallendarViewController.swift; sourceTree = "<group>"; };
 		49BF501F1C05FE0200190C80 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -136,7 +134,6 @@
 				49708C831BEE7CB80046DF38 /* Main.storyboard */,
 				497F0A5E1C0CAABC00A477B2 /* CallendarViewController.swift */,
 				497F0A5C1C0CAA8B00A477B2 /* CallendarCollectionViewCell.swift */,
-				497B055E1C0E11E5009BEE8C /* PopOverTableViewController.swift */,
 				49201ED61BFE0A30007C7695 /* DataManager.swift */,
 				49708C891BEE7CB80046DF38 /* Assets.xcassets */,
 				49708C8B1BEE7CB80046DF38 /* LaunchScreen.storyboard */,
@@ -240,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				497B055F1C0E11E5009BEE8C /* PopOverTableViewController.swift in Sources */,
 				49708C9B1BF229020046DF38 /* TimingTableViewController.swift in Sources */,
 				491DE53B1BF51EA600960CD0 /* TableViewCell.swift in Sources */,
 				493F0B531BF8A8DA00AE50AD /* DatePikersViewController.swift in Sources */,

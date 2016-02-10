@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import CoreData
 import Parse
-import Bolts
 class MyDayViewController: UIViewController {
     
     @IBOutlet weak var lableOfMyDay: UILabel!
